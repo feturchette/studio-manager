@@ -32,14 +32,21 @@ greater than 20.
 ## Setup
 
 Requirements
+
 PHP >= 7.0
+
 OpenSSL PHP Extension
+
 PDO PHP Extension
+
 Mbstring PHP Extension
 
 1- Create an empty file named database.sqlite inside the database/ folder.
+
 2- Run `$ cp .env.example .env` to have the environment variables working.
+
 3- Run `$ composer install` to install all the dependencies.
+
 4- Run `$ php -S localhost:8000 -t public` after this the server will be up.
 
 Feel free to change the port to anyother as needed (8001, 8080, etc..).
