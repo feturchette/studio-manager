@@ -49,7 +49,7 @@ class BookingService implements BookingServiceInterface
         $this->validateBooking($name, $date);
         $booking = Booking::find($id);
 
-        if (!$booking) {
+        if (! $booking) {
             throw new NotFoundException('Resource not found');
         }
 
@@ -74,9 +74,10 @@ class BookingService implements BookingServiceInterface
     {
         $booking = Booking::with('classes')->find($id);
 
-        if (!$booking) {
+        if (! $booking) {
             throw new NotFoundException('Resource not found', 404);
         }
+
         return $booking;
     }
 

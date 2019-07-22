@@ -41,7 +41,7 @@ PDO PHP Extension
 
 Mbstring PHP Extension
 
-1- Create an empty file named database.sqlite inside the database/ folder.
+1- Create an empty file named `database.sqlite` inside the `database/` folder.
 
 2- Run `$ cp .env.example .env` to have the environment variables working.
 

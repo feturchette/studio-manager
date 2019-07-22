@@ -72,7 +72,7 @@ class ClassesService implements ClassesServiceInterface
     {
         $class = Classes::with('bookings')->find($id);
 
-        if (!$class) {
+        if (! $class) {
             throw new NotFoundException('Resource not found', 404);
         }
 

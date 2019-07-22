@@ -15,9 +15,9 @@ class GetClassesBookingTest extends TestCase
     public function itCanGetCreatedBookingOfAClass()
     {
         $class = factory(Classes::class)->create([
-            'capacity' => 2
+            'capacity' => 2,
         ]);
-        factory(Booking::class,2)->create([
+        factory(Booking::class, 2)->create([
             'classes_id' => $class->id,
         ]);
         $class = Classes::find(1)->toArray();
